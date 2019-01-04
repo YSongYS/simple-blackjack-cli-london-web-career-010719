@@ -25,7 +25,7 @@ end
 
 def end_game (oldhand)
   # code #end_game here
-  puts ""
+  puts "Sorry, you hit #{oldhand}. Thanks for playing!"
 end
 
 def initial_round
@@ -60,4 +60,11 @@ end
 
 def runner
   # code runner here
+  welcome
+  existinghand = initial_round
+  While existinghand <=21 do
+    existinghand = hit? (existinghand)
+    display_card_total(existinghand)
+  end
+end_game (existinghand)
 end
