@@ -47,7 +47,7 @@ def hit? (oldhand)
     newcard = 0
   else invalid_command
   end
-  newhand = oldhand + newcard 
+  newhand = oldhand + newcard
 end
 
 def invalid_command
