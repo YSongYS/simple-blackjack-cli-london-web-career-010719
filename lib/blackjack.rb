@@ -62,7 +62,7 @@ def runner
   # code runner here
   welcome
   existinghand = initial_round
-  While existinghand <=21 do
+  while existinghand <=21 do
     existinghand = hit? (existinghand)
     display_card_total(existinghand)
   end
