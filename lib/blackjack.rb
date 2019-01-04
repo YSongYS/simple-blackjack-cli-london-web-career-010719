@@ -33,10 +33,19 @@ def initial_round
   card1 = deal_card
   card2 = deal_card
   fullhand = card1 + card2
+  display_card_total(fullhand)
 end
 
 def hit?
   # code hit? here
+  prompt_user
+  answer = get_user_input
+  if answer == "h"
+    newcard = deal_card
+  elsif answer == "s"
+    newcard = 0
+  else invalid_command
+  end 
 end
 
 def invalid_command
